@@ -27,8 +27,7 @@
 
 <?php
 include('connect.php');
-      
-     if(isset($_GET['id']) ){
+     if(isset($_GET['id'])){
      	
 
      	$p_name=$_GET['id'];
@@ -400,7 +399,6 @@ while($q=mysqli_fetch_array($query4)){
 		
 		?>
 		</table>
-		<a href="index.php" class="btn btn-bid btn-block" style="width: 100%;">Continue</a>
       
 <!-- table close here-->
         </div>

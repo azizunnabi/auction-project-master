@@ -1,6 +1,4 @@
-<?php session_start();?>
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -17,8 +15,8 @@ include("connect.php");
 
 if(isset($_SESSION['email']) && isset($_SESSION['name']))
 {
-	
-	
+	echo'<script>alert("yes session is set")</script>';
+	echo $_SESSION['email'];
 	/*
 echo "
 <div class='row'>

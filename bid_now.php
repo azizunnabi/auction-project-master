@@ -289,8 +289,11 @@
     $query=mysqli_query($con, "INSERT INTO `auction_fyp`.`bid_started_products` ( `first_name`, `last_name`,`bid_rate`, `email`, `password`, `country`, `contact`, `product_name`) 
       VALUES (' $first_name', ' $last_name', '$bid_rate', '$email', '$password', '$country', '$contact','$product_name')");
     if($query){
-        echo '<script>alert("data is inserted successfully")</script>';
-        echo '<script>window.open("product_details.php","_self")</script>';
+        echo '<script>alert("You have bidded successfully")</script>';
+
+
+
+        echo '<script>window.open("product_details.php?id='.$product_name.'","_self")</script>';
     }
 }
 
